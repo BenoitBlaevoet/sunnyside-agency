@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   /* line 60, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
   .services__titleh3 {
-    margin-top: 398px;
+    margin-top: calc(100vw + 23px);
   }
   /* line 63, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
   .services__design {

@@ -58,7 +58,7 @@
             grid-area: audience;
         }
         &__titleh3{
-            margin-top: 398px;
+            margin-top: calc(100vw + 23px); //398px;
         }
         &__design{
             grid-area: design;
