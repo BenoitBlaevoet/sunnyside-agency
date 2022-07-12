@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_reset.scss",
+		"../scss/_variables.scss",
+		"../scss/_mixins.scss",
+		"../scss/_typography.scss",
+		"../scss/_global.scss",
+		"../scss/layout/_all.scss",
+		"../scss/layout/_mobile.scss",
+		"../scss/layout/_desktop.scss"
+	],
+	"sourcesContent": [
+		"@import 'reset';\r\n@import 'variables';\r\n@import 'mixins';\r\n@import 'typography';\r\n@import 'global';\r\n@import './layout/all';",
+		"*, *:before, *:after{\r\n    box-sizing: border-box;\r\n}\r\n\r\nhtml, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n    font: inherit;\r\n    vertical-align: baseline;\r\n    text-rendering: optimizeLegibility;\r\n    -webkit-font-smoothing: antialiased;\r\n    text-size-adjust: none;\r\n}\r\n\r\nfooter, header, nav, section, main{\r\n    display: block;\r\n}\r\n\r\nbody{\r\n    line-height: 1;\r\n}\r\n\r\nol, ul{\r\n    list-style: none;\r\n}\r\n\r\nblockquote, q{\r\n    quotes: none;\r\n}\r\n\r\nblockquote:before, blockquote:after, q:before, q:after{\r\n    content: '';\r\n    content: none;\r\n}\r\n\r\ntable{\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n}\r\n\r\ninput{\r\n    -webkit-appearance: none;\r\n    border-radius: 0;\r\n}",
+		"// Icon path\r\n$icon-facebook-path: '../icons/facebook.svg';\r\n$icon-instagram-path: '../icons/instagram.svg';\r\n$icon-pinterest-path: '../icons/pinterest.svg';\r\n$icon-twitter-path: '../icons/twitter.svg';\r\n$icon-arrowdown-path: '../icons/arrowdown.svg';\r\n// Image path\r\n$image-cherry-path: '../images/cherry.svg';\r\n$image-cone-path: '../images/cone.svg';\r\n$image-cup-path: '../images/cup.svg';\r\n$image-egg-path: '../images/egg.svg';\r\n$image-header-path: '../images/header.svg';\r\n$image-mandarin-path: '../images/mandarin.svg';\r\n$image-milk-path: '../images/milk.svg';\r\n$image-plate-path: '../images/plate.svg';\r\n$image-sugar-path: '../images/sugar.svg';\r\n$image-sunnyside-path: '../images/sunnyside.svg';\r\n// Colors\r\n$color-white: #fff;\r\n$color-black: #000;\r\n//exemple: background color\r\n$color-lightblue:#39B5E4;\r\n//exemple: text in lightblue\r\n$color-darkblue: #19536C;\r\n$color-darkerblue: #052C3B;\r\n//exemple: footer background\r\n$color-lightgreen: #90D4C6;\r\n//exemple: text in green background(like cherry image)\r\n$color-darkgreen:#3E7467;\r\n$color-yellow: #FAD400;\r\n$color-tangerine: #FE7766;\r\n//exemple text\r\n$color-gray: #808397;\r\n//exemple text title\r\n$color-darkgray:#24303E;\r\n//exemple: client title\r\n$color-lightgray: #A7AAAD;",
+		"",
+		"",
+		".header{\r\n    background-color: $color-lightblue;\r\n}\r\n",
+		"@import 'mobile';\r\n@import 'desktop';",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAA;EAChB,UAAU,EAAE,UAAU;CACzB;;;AAED,AAAA,IAAI,EAAE,IAAI,EAAE,GAAG,EAAE,IAAI,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EAAE,UAAU,EAAE,GAAG,EAAE,CAAC,EAAE,IAAI,EAAE,EAAE,EAAE,GAAG,EAAE,KAAK,EAAE,MAAM,EAAE,MAAM,EAAE,GAAG,EAAE,GAAG,EAAE,EAAE,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,QAAQ,EAAE,IAAI,EAAE,KAAK,EAAE,KAAK,EAAE,OAAO,EAAE,KAAK,EAAE,KAAK,EAAE,KAAK,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,IAAI,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM,EAAE,MAAM,EAAE,GAAG,EAAE,OAAO,EAAE,KAAK,CAAA;EACnS,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,SAAS,EAAE,IAAI;EACf,IAAI,EAAE,OAAO;EACb,cAAc,EAAE,QAAQ;EACxB,cAAc,EAAE,kBAAkB;EAClC,sBAAsB,EAAE,WAAW;EACnC,gBAAgB,EAAE,IAAI;CACzB;;;AAED,AAAA,MAAM,EAAE,MAAM,EAAE,GAAG,EAAE,OAAO,EAAE,IAAI,CAAA;EAC9B,OAAO,EAAE,KAAK;CACjB;;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,CAAC;CACjB;;;AAED,AAAA,EAAE,EAAE,EAAE,CAAA;EACF,UAAU,EAAE,IAAI;CACnB;;;AAED,AAAA,UAAU,EAAE,CAAC,CAAA;EACT,MAAM,EAAE,IAAI;CACf;;;AAED,AAAA,UAAU,AAAA,OAAO,EAAE,UAAU,AAAA,MAAM,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAA;EAClD,OAAO,EAAE,EAAE;EACX,OAAO,EAAE,IAAI;CAChB;;;AAED,AAAA,KAAK,CAAA;EACD,eAAe,EAAE,QAAQ;EACzB,cAAc,EAAE,CAAC;CACpB;;;AAED,AAAA,KAAK,CAAA;EACD,kBAAkB,EAAE,IAAI;EACxB,aAAa,EAAE,CAAC;CACnB;;;AI7CD,AAAA,OAAO,CAAA;EACH,gBAAgB,EHoBH,OAAO;CGnBvB"
+}
