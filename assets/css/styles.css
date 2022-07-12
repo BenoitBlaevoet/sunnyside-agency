@@ -54,18 +54,154 @@ input {
   border-radius: 0;
 }
 
-/* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
-.header {
-  background-color: #39B5E4;
-  background-image: url("../images/header.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
+@font-face {
+  font-family: Fraunces;
+  src: url(../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
 }
 
-/* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+@font-face {
+  font-family: Fraunces-italic;
+  src: url(../fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Barlow-semi;
+  src: url(../fonts/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url(../fonts/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: Barlow-medium;
+  src: url(../fonts/Barlow-Medium.ttf);
+}
+
+@font-face {
+  font-family: Barlow-bold;
+  src: url(../fonts/Barlow-Bold.ttf);
+}
+
+/* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+html {
+  font-family: Fraunces;
+}
+
+/* line 4, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+p {
+  font-family: Barlow-semi;
+  letter-spacing: -0.13px;
+}
+
+/*
+h1, h2, h3, h4, h5, h6{
+    font-family: Fraunces;
+}
+*/
+/* line 13, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.grid {
+  display: grid;
+}
+
+/* line 16, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header {
-  aspect-ratio: 375/538;
+  background-color: #49bcf1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  grid-template-areas: "brand navi" "title title";
+}
+
+/* line 24, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.header__brand {
+  grid-area: brand;
+}
+
+/* line 27, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.header__nav {
+  grid-area: navi;
+}
+
+/* line 30, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.header__title {
+  grid-area: title;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* line 39, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.header__title::after {
+  content: "";
+  background-image: url("../icons/arrowdown.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 108px;
+  position: absolute;
+  left: calc(50% - 15px);
+}
+
+/* line 52, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__title {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 2, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .header {
+    background-image: url("../images/header-mobile.svg");
+    aspect-ratio: 375/538;
+    padding: 32px 24px 0 24px;
+    grid-template-rows: 112px 258px;
+  }
+  /* line 7, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .header__nav__menu:not(nav--is-visible) {
+    display: none;
+  }
+  /* line 10, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .header__nav {
+    width: 24px;
+    height: 18px;
+    margin-left: auto;
+  }
+  /* line 15, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .header__title {
+    max-width: 325px;
+    font-size: 2.5em;
+    letter-spacing: 6.25px;
+  }
+  /* line 20, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .header__title::after {
+    margin-top: calc(62vw - 174px);
+  }
+  /* line 25, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .services__article {
+    width: 100vw;
+    padding: 64px 24px;
+  }
+  /* line 29, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .services__titleh2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 2, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_desktop.scss */
+  .header {
+    aspect-ratio: 1440/800;
+    padding: 34px 48px 0 40px;
+  }
+  /* line 6, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_desktop.scss */
+  .header__title {
+    font-size: 3.5em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

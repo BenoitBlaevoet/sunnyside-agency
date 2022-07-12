@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) {
+    .header{  
+      //  background-image: url($image-header-path);
+        aspect-ratio: 1440/800;
+        padding: 34px 48px 0 40px;
+        &__title{
+            font-size: 3.5em;
+        }
+    }
+    
+}

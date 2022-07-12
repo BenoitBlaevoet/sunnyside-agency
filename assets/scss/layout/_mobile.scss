@@ -1,3 +1,36 @@
-.header{
-    aspect-ratio: 375/538;
+@media screen and (max-width: 600px) {
+    .header{  
+        background-image: url($image-header-mobile-path);
+        aspect-ratio: 375/538;
+        padding: 32px 24px 0 24px;
+        grid-template-rows: 112px 258px;
+        &__nav__menu:not(nav--is-visible){
+            display: none;
+        }
+        &__nav{
+            width: 24px;
+            height: 18px;
+            margin-left: auto;
+        }
+        &__title{
+            max-width: 325px;
+            font-size: 2.5em;
+            letter-spacing: 6.25px;
+        }
+        &__title::after{
+            margin-top: calc(62vw - 174px);
+        }
+    }
+    .services{
+        &__article{
+            width: 100vw;
+            padding: 64px 24px;
+        }
+        &__titleh2{
+            font-size: 2em;
+        }
+        &__text{
+
+        }
+    }
 }
