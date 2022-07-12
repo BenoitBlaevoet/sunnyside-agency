@@ -57,6 +57,15 @@ input {
 /* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header {
   background-color: #39B5E4;
+  background-image: url("../images/header.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+.header {
+  aspect-ratio: 375/538;
 }
 
 /*# sourceMappingURL=styles.css.map */

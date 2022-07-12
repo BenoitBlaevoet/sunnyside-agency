@@ -1,3 +1,7 @@
 .header{
     background-color: $color-lightblue;
+    background-image: url($image-header-path);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
