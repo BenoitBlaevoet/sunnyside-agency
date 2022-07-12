@@ -22,15 +22,20 @@
         }
     }
     .services{
+        grid-template-columns: 100vw;
+        text-align: center;
         &__article{
-            width: 100vw;
             padding: 64px 24px;
         }
         &__titleh2{
             font-size: 2em;
+            margin-bottom: 24px;
         }
         &__text{
-
+            margin-bottom: 40px;
+        }
+        &__more::after{   
+            margin: auto;   
         }
     }
 }

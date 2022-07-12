@@ -1,21 +1,19 @@
-html{
-    font-family: Fraunces;
-}
 p{
     font-family: Barlow-semi;
     letter-spacing: -0.13px;
+    line-height: 30px;
 }
-/*
+
 h1, h2, h3, h4, h5, h6{
     font-family: Fraunces;
 }
-*/
+
 .grid{
     display: grid;
 }
 .header{
     background-color: $color-lightblue2;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     color: $color-white;
     grid-template-areas: 
@@ -51,5 +49,49 @@ h1, h2, h3, h4, h5, h6{
 .services{
     &__title{
         font-weight: 900;
+    }
+    &__titleh2{
+        color: $color-darkgray;
+    }
+    &__text{
+        color: $color-gray;
+    }
+    &__more, &__more:visited{
+        text-decoration: none;
+        color: $color-darkgray;
+        font-family: Fraunces;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    &__more::after{
+        content: "";
+        display: block;
+        width: 137px;
+        height: 10px;
+        border-radius: 5px;
+        top: -6px;
+        z-index: -1;
+        position: relative;
+    }
+    &__more.color-tangerine::after{
+        background-color: $color-tangerine-alpha;
+    }
+    &__more.color-tangerine:hover{
+        &::after{
+            background-color: $color-tangerine;
+        }
+    }
+    &__more.color-yellow::after{
+        background-color: $color-yellow-alpha;
+    }
+    &__more.color-yellow:hover{
+        &::after{
+            background-color: $color-yellow;
+        }
+    }
+    &__image{
+        &.services--egg{
+
+        }
     }
 }

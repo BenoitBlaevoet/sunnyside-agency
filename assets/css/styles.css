@@ -85,46 +85,42 @@ input {
 }
 
 /* line 1, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
-html {
-  font-family: Fraunces;
-}
-
-/* line 4, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 p {
   font-family: Barlow-semi;
   letter-spacing: -0.13px;
+  line-height: 30px;
 }
 
-/*
-h1, h2, h3, h4, h5, h6{
-    font-family: Fraunces;
+/* line 7, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Fraunces;
 }
-*/
-/* line 13, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+
+/* line 11, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .grid {
   display: grid;
 }
 
-/* line 16, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 14, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header {
   background-color: #49bcf1;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
   grid-template-areas: "brand navi" "title title";
 }
 
-/* line 24, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 22, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header__brand {
   grid-area: brand;
 }
 
-/* line 27, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 25, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header__nav {
   grid-area: navi;
 }
 
-/* line 30, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 28, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header__title {
   grid-area: title;
   margin-left: auto;
@@ -135,7 +131,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 900;
 }
 
-/* line 39, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 37, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .header__title::after {
   content: "";
   background-image: url("../icons/arrowdown.svg");
@@ -148,9 +144,60 @@ h1, h2, h3, h4, h5, h6{
   left: calc(50% - 15px);
 }
 
-/* line 52, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+/* line 50, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
 .services__title {
   font-weight: 900;
+}
+
+/* line 53, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__titleh2 {
+  color: #24303E;
+}
+
+/* line 56, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__text {
+  color: #808397;
+}
+
+/* line 59, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more, .services__more:visited {
+  text-decoration: none;
+  color: #24303E;
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* line 66, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more::after {
+  content: "";
+  display: block;
+  width: 137px;
+  height: 10px;
+  border-radius: 5px;
+  top: -6px;
+  z-index: -1;
+  position: relative;
+}
+
+/* line 76, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more.color-tangerine::after {
+  background-color: rgba(254, 119, 102, 0.25);
+}
+
+/* line 80, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more.color-tangerine:hover::after {
+  background-color: #FE7766;
+}
+
+/* line 84, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more.color-yellow::after {
+  background-color: rgba(250, 212, 0, 0.25);
+}
+
+/* line 88, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/_global.scss */
+.services__more.color-yellow:hover::after {
+  background-color: #FAD400;
 }
 
 @media screen and (max-width: 600px) {
@@ -181,14 +228,27 @@ h1, h2, h3, h4, h5, h6{
   .header__title::after {
     margin-top: calc(62vw - 174px);
   }
-  /* line 25, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  /* line 24, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .services {
+    grid-template-columns: 100vw;
+    text-align: center;
+  }
+  /* line 27, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
   .services__article {
-    width: 100vw;
     padding: 64px 24px;
   }
-  /* line 29, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  /* line 30, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
   .services__titleh2 {
     font-size: 2em;
+    margin-bottom: 24px;
+  }
+  /* line 34, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .services__text {
+    margin-bottom: 40px;
+  }
+  /* line 37, ../../OneDrive/Documents/BeCode/sunnyside-agency/assets/scss/layout/_mobile.scss */
+  .services__more::after {
+    margin: auto;
   }
 }
 
