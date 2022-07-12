@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6{
     }
     &__titleh2{
         color: $color-darkgray;
+    }&__titleh3{
+        color: $color-darkgreen2;
+        margin-bottom: 27px;
     }
     &__text{
         color: $color-gray;
@@ -89,9 +92,75 @@ h1, h2, h3, h4, h5, h6{
             background-color: $color-yellow;
         }
     }
+    &__text{
+        color:$color-darkgreen2;
+    }
     &__image{
-        &.services--egg{
-
+        width: 100vw;
+        aspect-ratio: 375 / 312;
+        background-size: contain;
+        &.services__egg{
+            background-image: url($image-egg-path);
+        }
+        &.services__cup{
+            background-image: url($image-cup-path);
+        }
+    }
+    &__design, &__photography{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__design{
+        background-image: url($image-cherry-path);
+    }&__photography{
+        background-image: url($image-mandarin-path);
+    }
+}
+.testimonials{
+    text-align: center;
+    h4{
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-lightgray;
+    }
+    &__text{
+        color: $color-anothergray;
+    }
+    &__name{
+        color: $color-darkgray;
+        font-family: Fraunces;
+        font-weight: 900;
+        
+    }
+    &__roletitle{
+        color: $color-lightgray;
+    }
+}
+.footer{
+    background-color: $color-lightgreen;
+    &__milk{
+        background-image: url($image-milk-path);
+    }
+    &__plate{
+        background-image: url($image-plate-path);
+    }
+    &__cone{
+        background-image: url($image-cone-path);
+    }
+    &__sugar{
+        background-image: url($image-sugar-path);
+    }
+    &__illustration{
+        background-size: cover;
+    }
+    &__menu, &__socialss {
+        a, a:visited{
+            text-decoration: none;
+            color: $color-anothergreen;
+        }
+        a:hover{
+            filter: brightness(100);
         }
     }
 }
