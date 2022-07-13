@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1149px) {
     .header{  
         background-image: url($image-header-mobile-path);
         aspect-ratio: 375/538;
@@ -12,6 +12,7 @@
             height: 18px;
             margin-left: auto;
             cursor: pointer;
+            background-image: url($icon-burger-path);
         }
         &__title{
             max-width: 325px;
@@ -38,6 +39,10 @@
         &__titleh2{
             font-size: 2em;
             margin-bottom: 24px;
+        }
+        &__image{
+            width: 100vw;
+            aspect-ratio: 375 / 312;
         }
         &__text{
             margin-bottom: 40px;
