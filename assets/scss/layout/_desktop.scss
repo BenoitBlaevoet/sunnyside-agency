@@ -9,11 +9,11 @@
         //height: 56px;
         &__title{
             font-size: 3.5em;
-            margin-top: 105px;
+            margin-top: 115px;
             letter-spacing: 8.75px;
         }
         &__title::after{
-            margin-top: 100px;
+            margin-top: calc(14vw - 100px);
         }
         &__nav, &__brand{
             margin-top: auto;
@@ -35,7 +35,7 @@
                     color: $color-white; 
                 }
                 a:hover{
-                    text-decoration: underline;
+                    color:$color-darkgray;
                 }
                 &__contact{
                     border-radius: 30px;
@@ -60,24 +60,29 @@
         }
     }
     .services{
-        max-width: calc(100vw - 18px);
-        grid-template-columns: repeat(2, calc(50vw - 9px)) ;
+        max-width: calc(100vw - 17px);
+        grid-template-columns: repeat(2, calc(50vw - 8.5px)) ;
         grid-template-areas: 
                                 "a b"
                                 "c d"
                                 "e f";
-        article, div{
-        }
         &__article{
             box-sizing: border-box;
             padding: 138px 165px 0px 110px;
             @media screen and (max-width: 1250px){
                 padding-top: 60px;
             }
+            @media screen and (min-width: 1650px){
+                padding-top: 260px;
+                padding-right: 285px;
+            }
         }
         &__article:first-child{
             padding-right: 110px;
             padding-left: 165px;
+            @media screen and (min-width: 1650px){
+                padding-left: 285px;
+            }
         }
         &__image{
             aspect-ratio: 720/600;
