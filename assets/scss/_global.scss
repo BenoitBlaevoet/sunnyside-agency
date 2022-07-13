@@ -53,7 +53,12 @@ h1, h2, h3, h4, h5, h6{
     &__titleh2{
         color: $color-darkgray;
     }&__titleh3{
-        color: $color-darkgreen2;
+        &--darkgreen{
+            color: $color-darkgreen2;
+        }
+        &--darkblue{
+            color: $color-darkerblue;
+        }
         margin-bottom: 27px;
     }
     &__text{
@@ -92,8 +97,11 @@ h1, h2, h3, h4, h5, h6{
             background-color: $color-yellow;
         }
     }
-    &__text{
+    &__text--darkgreen{
         color:$color-darkgreen2;
+    }
+    &__text--darkblue{
+        color:$color-darkblue;
     }
     &__image{
         background-repeat: no-repeat;
@@ -138,6 +146,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .footer{
     background-color: $color-lightgreen;
+    text-align: center;
     &__milk{
         background-image: url($image-milk-path);
     }

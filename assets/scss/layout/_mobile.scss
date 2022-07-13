@@ -76,9 +76,9 @@
     }
     .testimonials{
         padding: 64px 24px;
-        h4{
+        &__title{
             margin-bottom: 64px;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             font-weight: 900;
             font-size: 1em;
         }
@@ -110,7 +110,6 @@
                             "c d"
                             "about about"                    
         ;
-        text-align: center;
         &__about{
             grid-area: about;
             padding: 64px 39px;

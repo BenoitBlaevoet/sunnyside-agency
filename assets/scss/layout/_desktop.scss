@@ -67,13 +67,109 @@
                                 "c d"
                                 "e f";
         &__article{
-            padding: 158px 165px 158px 110px;
+            padding: 138px 165px 0px 110px;
+            @media screen and (max-width: 1250px){
+                padding-top: 60px;
+            }
         }
         &__article:first-child{
-            padding: 158px 110px 158px 165px;
+            padding-right: 110px;
+            padding-left: 165px;
         }
         &__image{
             aspect-ratio: 720/600;
+        }
+        &__more{
+            padding-left: 9px;
+            padding-right: 8px;
+        }
+        &__titleh2{
+            font-size: 2.5em;
+            margin-bottom: 32px;
+        }
+        &__design, &__photography{
+            text-align: center;
+            padding-top: 0;
+            padding-bottom: 59px;
+            padding-left: 190px;
+            padding-right: 190px;
+            @media screen and (max-width: 1250px){
+                padding-bottom: 29px;
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+        &__titleh3{
+            font-size: 1.75em;
+            margin-bottom: 27px;
+            margin-top: calc(50vw - 322px);
+            
+        }
+        &__text{
+            //color:$color-gray;
+            margin-bottom: 40px;
+            font-size: 1.125em;
+        }
+    }
+    .testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-around;
+        padding-left: 165px;
+        padding-right: 165px;
+        padding-top: 160px;
+        padding-bottom: 160px;
+        &__title{
+            flex: 0 0 100%;
+            letter-spacing: 5px;
+            margin-bottom: 51px;
+        }
+        &__item{
+            width: 31%;
+        }
+        &__avatar{
+            margin-bottom: 58px;
+        }
+        &__text{
+            font-size: 1.125em;
+            margin-bottom: 69px;
+        }
+        &__name{
+            font-size: 1.125em;
+            margin-bottom: 9px;
+        }
+        &__roletitle{
+            font-size: 0.875em;
+        }
+    }
+    .footer{
+        grid-template-areas:    "a b c d"
+                                "about about about about";
+        &__illustration{
+            aspect-ratio: 360/447;
+        }
+        &__about{
+            grid-area: about;
+            padding: 72px;
+        }
+        &__brand{
+            margin-bottom: 40px;
+        }
+        &__menu{
+            margin-bottom: 88px;
+            a+a{
+                margin-left: 57px;
+            }
+        }
+        &__socialss{
+            a+a{
+                margin-left: 28px;
+            }
         }
     }
 }
