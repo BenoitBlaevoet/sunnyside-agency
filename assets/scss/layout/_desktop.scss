@@ -1,12 +1,12 @@
+//Pour desktop a partir de 1150px, prevu pour 1440px. Adapter avec quelque regle pour
+//écran un peu plus petit ou plus grand mais qui je pense ne necessiter pas un autre css
 @media screen and (min-width: 1150px) {
     .header{  
-      //  background-image: url($image-header-path);
         aspect-ratio: 1440/800;
         padding: 34px 48px 0 40px;
         grid-template-rows: 56px 1fr;
         background-image: url($image-header-path);
         background-size: cover;
-        //height: 56px;
         &__title{
             font-size: 3.5em;
             margin-top: 115px;
@@ -69,9 +69,11 @@
         &__article{
             box-sizing: border-box;
             padding: 138px 165px 0px 110px;
+            //Changement du padding lors que l'écran est plus petit par manque d'espace
             @media screen and (max-width: 1250px){
                 padding-top: 60px;
             }
+            //Changement du padding lors que l'écran est plus grand pour occuper mieux l'espace
             @media screen and (min-width: 1650px){
                 padding-top: 260px;
                 padding-right: 285px;
@@ -80,6 +82,7 @@
         &__article:first-child{
             padding-right: 110px;
             padding-left: 165px;
+            //Changement du padding lors que l'écran est plus grand pour occuper mieux l'espace
             @media screen and (min-width: 1650px){
                 padding-left: 285px;
             }
@@ -102,6 +105,7 @@
             padding-left: 190px;
             padding-right: 190px;
             @media screen and (max-width: 1250px){
+                //Changement du padding lors que l'écran est plus petit par manque d'espace
                 padding-bottom: 29px;
                 padding-left: 150px;
                 padding-right: 150px;
