@@ -4,17 +4,47 @@
         aspect-ratio: 375/538;
         padding: 32px 24px 0 24px;
         grid-template-rows: 112px 258px;
-        &__nav__menu:not(nav--is-visible){
-            display: none;
-        }
         &__nav{
             width: 24px;
             height: 18px;
             margin-left: auto;
-            cursor: pointer;
-            background-image: url($icon-burger-path);
+            cursor: pointer;      
+            position: relative;
+            #header__nav__burger{
+                background-image: url($icon-burger-path);
+                width: 24px;
+                height: 18px;
+            }      
+            &__menu{
+                display: none;
+                background-color: white;
+                position: absolute;
+                padding-top: 63px;
+                width: 329px;
+                height: 329px;
+                left : -310px;
+                top : 30px;
+                z-index: 10;
+                &.nav--is-visible{
+                    display: block;
+                }
+                &__wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 30px;
+                }
+                &-item{
+                    a{
+                        text-decoration: none;
+                        color: $color-gray;
+                    }
+                }
+            }
         }
         &__title{
+            z-index: 0;
             max-width: 325px;
             font-size: 2.5em;
             letter-spacing: 6.25px;
