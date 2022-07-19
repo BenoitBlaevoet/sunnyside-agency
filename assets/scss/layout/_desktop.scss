@@ -23,8 +23,10 @@
             margin-left: auto;
             height: 56px;
             &__menu{
-                display: flex;
-                gap: 47px;
+                &__wrapper{
+                    display: flex;
+                    gap: 47px;
+                }
                 &-item{
                     display: flex;
                     align-items: center;

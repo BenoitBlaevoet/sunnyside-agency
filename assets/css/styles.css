@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     height: 56px;
   }
-  .header__nav__menu {
+  .header__nav__menu__wrapper {
     display: flex;
     gap: 47px;
   }
