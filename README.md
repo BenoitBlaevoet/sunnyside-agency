@@ -1,6 +1,6 @@
 # sunnyside-agency
 
-Taking on a Frontend Mentor challenge as part of my formation while learning HTML / CSS
+Taking on a Frontend Mentor challenge as part of my formation while learning HTML / CSS  
 [Page link](https://benoitblaevoet.github.io/sunnyside-agency/)
 
 
